@@ -13,7 +13,7 @@
     <div class="gallery">
     <?php
         $dirname = "./img/";
-        $images = glob($dirname."*.jpg","*.png");
+        $images = glob($dirname."*.jpg *.png");
 
         foreach($images as $image) {
             echo "<div>";
