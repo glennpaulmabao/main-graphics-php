@@ -11,12 +11,12 @@
 </head>
 <body>
     <?php
-        $dirname = "./img/websites/";
+        $dirname = "./img/";
         $images = glob($dirname."*.jpg");
 
         foreach($images as $image) {
             echo "<div>";
-            echo '<img src="'.$image.'"  />';
+            echo '<img src="'.$image.'" />';
             echo "</div>";
         }
     ?>
