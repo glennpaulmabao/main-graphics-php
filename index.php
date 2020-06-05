@@ -20,23 +20,5 @@
         }
     ?>
     </div>
-    <?php
-    function get_files($images_dir,$exts = array('./img/*.*')) {
-        $files = array();
-        $times = array();
-        if($handle = opendir($images_dir)) {
-            while(false !== ($file = readdir($handle))) {
-                $extension = strtolower(get_file_extension($file));
-                if($extension && in_array($extension,$exts)) {
-                    $files[] = $file;
-                    $times[] = filemtime($images_dir . '/' . $file);
-                }
-            }
-            closedir($handle);
-        }
-        array_multisort($files, SORT_DESC, $times);
-        return $files;
-    }
-    ?>
 </body>
 </html>
