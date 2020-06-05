@@ -16,9 +16,7 @@
         $images = glob($dirname."*.*");
 
         foreach($images as $image) {
-            echo "<div>";
             echo '<img src="'.$image.'" />';
-            echo "</div>";
         }
     ?>
     </div>
