@@ -14,21 +14,6 @@
     <?php
         $dirname = "./img/";
         $images = glob($dirname."*.*");
-        $files = array();
-        $times = array();
-
-        if($handle = opendir($images)) {
-            while(false !== ($file = readdir($handle))) {
-                $extension = strtolower(get_file_extension($file));
-                if($extension && in_array($extension,$exts)) {
-                    $files[] = $file;
-                    $times[] = filemtime($images . './img/' . $file);
-                }
-            }
-            closedir($handle);
-        }
-        array_multisort($files, SORT_DESC, $times);
-        return $files;
 
         foreach($images as $image) {
             echo '<img src="'.$image.'" />';
