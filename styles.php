@@ -27,6 +27,7 @@ body{
 .gallery img{
     width: 100% !important;
     height: auto !important;
+    margin:10px;
 }
 
 
