@@ -20,8 +20,5 @@
             echo "</div>";
         }
     ?>
-    <main>
-        
-    </main>
 </body>
 </html>
