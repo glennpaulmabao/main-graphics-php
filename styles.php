@@ -22,12 +22,12 @@ body{
    -moz-column-count: 5;
    -moz-column-gap: 0px;
    column-count: 5;
-   column-gap: 10;
+   column-gap: 10px;
 }
 .gallery img{
     width: 100% !important;
     height: auto !important;
-    margin:10px;
+    margin: 5px;
 }
 
 
