@@ -23,7 +23,7 @@ body{
    -moz-column-gap:      0px;
    column-count:         5;
    column-gap:           5px;
-   row-gap:              5px;  
+   margin:5px 0;
 }
 .gallery img{
     width: 100% !important;
