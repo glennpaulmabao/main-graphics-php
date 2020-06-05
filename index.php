@@ -16,7 +16,7 @@
 
         foreach($images as $image) {
             echo "<div>";
-            echo '<img src="'.$image.'"  /><br />';
+            echo '<img src="'.$image.'"  />';
             echo "</div>";
         }
     ?>
