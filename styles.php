@@ -18,6 +18,7 @@ body{
 .gallery{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px,auto))
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 }
