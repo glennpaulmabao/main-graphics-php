@@ -12,6 +12,15 @@
 <body>
     <div class="gallery">
     <?php
+        $dirname = "./img/";
+        $images = glob($dirname."*.*");
+
+        foreach($images as $image) {
+            echo '<img src="'.$image.'" />';
+        }
+    ?>
+    </div>
+    <?php
     function get_files($images_dir,$exts = array('./img/*.*')) {
         $files = array();
         $times = array();
@@ -29,6 +38,5 @@
         return $files;
     }
     ?>
-    </div>
 </body>
 </html>
