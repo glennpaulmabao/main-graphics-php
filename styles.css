@@ -1,0 +1,448 @@
+*,
+*::before,
+*::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    image-resolution: 42dpi;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color:black;
+}
+main{
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    align-items: center;
+}
+.container{
+    position: absolute;
+    top: 10%;
+    left: 45%;
+}
+.menu-container{
+    position: absolute;
+    bottom: 10vh;
+    left: 45%;    
+}
+
+.branding{
+    display: flex;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.logo{
+    height: auto;
+    width: 23.6vw;
+    cursor: pointer;
+    background-size: auto;
+    overflow: hidden;
+    object-fit: contain;
+    object-position: top;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+}
+.heading{
+    width: auto;
+    height: 40vh;
+    padding: 0px 10% 0px 0px;
+}
+
+.heading h1{
+    font-size: 7.5vw;
+    font-weight: bold;
+    line-height: 100%;
+}
+.heading p{
+    margin: 1vh 0px 0px 0px;
+    font-size: 20px;
+    font-weight: 200;
+}
+.menu{
+    margin: 10vh 0px;
+    display: flex;
+    background-color: #ff0000;
+    padding: 5vh;
+    width: 55vw;
+    height: auto;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.websites,.graphics,.sketch-up,.music{
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+}
+.websites img,.graphics img,.sketch-up img,.music img{
+    height: 8.5vh;
+    width: auto;
+    margin: 2vh 0px;
+}
+.websites p, .graphics p, .sketch-up p, .music p{
+    color: white;
+    font-weight: 200;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+footer{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+}
+.footer-links{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+}
+.footer-link{
+    margin: 0px 30px 0px 0px;
+    color: gray;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 400;
+}
+nav{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    height: 10vh;
+    border-width: thin;
+    border-color: white;
+    border-style: none none solid none;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.nav-link{
+    margin: 0px 30px 0px 0px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 400;
+}
+.nav-link:hover{
+    color:#bfc2d0;
+}
+.nav-link.active{
+    margin: 0px 30px 0px 0px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 800;
+}
+.pages-nav{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: flex-start;
+    align-items: center;
+}
+.brand{
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+.brand img{
+    height: 5vh;
+    width: auto;
+}
+.projects{
+    width: 100%;
+    margin: auto;
+}
+.uno{
+    display: block;
+    position: relative;
+    background-color: black;
+}
+.dos{
+    display: block;
+    position: relative;
+    background-color:#1c1c1c;
+}
+
+.descriptions{
+    position: relative;
+    z-index: 1;
+    height: 50.1vh;
+    width: 50.1vw;
+    border-width: thin;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    bottom: 36vh;
+    left: 39vw;
+}
+
+.flex-desc {
+    width: auto;
+    height: 100%;
+    display: block;
+    position: relative;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.flex-desc h1{
+    position: absolute;
+    bottom: 10vh;
+    left: 22vw;
+    text-transform: uppercase;
+    font-size: 1.8vw;
+    color: white;
+    font-weight:900;
+    transform-origin: 0 0;
+    transform: rotate(270deg);
+} 
+  
+.flex-desc p {
+    margin: 10% 0px 0px 55%;
+    width: 20vw;
+    text-align: left;
+    font-size: 11px;
+}
+
+.img-placeholder{
+    position: relative;
+    z-index: 2;
+    height: 50.1vh;
+    width: 50.1vw;
+    border-width: thin;
+    background-color: black;
+    border-color:white;
+    border-style: solid;
+    top: 22vh;
+    left: 10vw;
+    overflow: scroll;
+}
+.img-placeholder > img{
+    object-fit: cover;
+    object-position: top;
+    height: auto;
+    width: 50.1vw;
+    position: relative;
+    vertical-align: bottom;
+}
+#mockup-motion{
+    animation-timing-function: ease-out infinite;
+}
+@keyframes mockup{
+    0%{top: 0px;}
+    100%{top: -2000px;}
+}
+
+@media(max-width: 360px){
+
+    .heading p{
+        font-size: 14px;
+    }
+    .heading h1{
+        font-size: 10px;
+    }
+    .menu{
+        display: flex;
+        width: 100vw;
+    }
+    .menu-container{
+        left: 0;
+    }
+    .flex-desc h1{
+        font-size: 3vw;
+        transform: none;
+        position: absolute;
+        top: 5%;
+        left: 10%;
+    }
+    .flex-desc p{
+        position: absolute;
+        top: 10%;
+    }
+}
+
+@media(max-width: 411px){
+
+    .heading p{
+        font-size: 14px;
+    }
+    .heading h1{
+        font-size: 20px;
+    }
+    .menu{
+        display: flex;
+        width: 100vw;
+    }
+    .menu-container{
+        left: 0;
+    }
+    .flex-desc h1{
+        font-size: 3vw;
+        transform: none;
+        position: absolute;
+        top: 5%;
+        left: 10%;
+    }
+    .flex-desc p{
+        position: absolute;
+        top: 10%;
+    }
+}
+
+@media(max-width: 640px){
+
+    .heading p{
+        font-size: 14px;
+    }
+    .menu{
+        display: flex;
+        width: 100vw;
+    }
+    .menu-container{
+        bottom: 10vh;
+        left: 0;
+    }
+    .flex-desc h1{
+        font-size: 3vw;
+        transform: none;
+        position: absolute;
+        top: 5%;
+        left: 10%;
+    }
+    .flex-desc p{
+        position: absolute;
+        top: 10%;
+    }
+}
+
+@media(max-width: 768px){
+
+    .heading p{
+        font-size: 14px;
+    }
+    .heading h1{
+        font-size: 6.5vh;
+    }
+    .menu{
+        display: flex;
+        width: 100vw;
+    }
+    .menu-container{
+        bottom: 10vh;
+        left: 0;
+    }
+    .flex-desc h1{
+        font-size: 3vw;
+        transform: none;
+        position: absolute;
+        top: 5%;
+        left: 10%;
+    }
+    .flex-desc p{
+        position: absolute;
+        top: 10%;
+    }
+}
+
+@media(max-width: 812px){
+    .heading h1{
+        font-size: 2px;
+    }
+    .heading p{
+        font-size: 14px;
+    }
+    .menu{
+        display: flex;
+        width: 100vw;
+    }
+    .menu-container{
+        bottom: 10vh;
+        left: 0;
+    }
+    .flex-desc h1{
+        font-size: 3vw;
+        transform: none;
+        position: absolute;
+        top: 5%;
+        left: 10%;
+    }
+    .flex-desc p{
+        position: absolute;
+        top: 10%;
+    }
+}
+
+@media(max-width: 1024px){
+
+    .heading h1{
+        font-size: 9vw;
+    }
+    .heading p{
+        font-size: 2vh;
+    }
+    .menu{
+        display: flex;
+        width: 100vw;
+    }
+    .menu-container{
+        bottom: 10vh;
+        left: 0vw;
+    }
+    .flex-desc h1{
+        font-size: 3vw;
+        transform: none;
+        position: absolute;
+        top: 5%;
+        left: 10%;
+    }
+    .flex-desc p{
+        position: absolute;
+        top: 10%;
+    }
+}
+
+@media(max-width: 1366px){
+
+    .heading h1{
+        font-size: 9vw;
+    }
+    .heading p{
+        font-size: 2vh;
+    }
+    .menu{
+        display: flex;
+        width: 100vw;
+    }
+    .menu-container{
+        bottom: 10vh;
+        left: 0vw;
+    }
+    .flex-desc h1{
+        font-size: 3vw;
+        transform: none;
+        position: absolute;
+        top: 5%;
+        left: 10%;
+    }
+    .flex-desc p{
+        position: absolute;
+        top: 10%;
+    }
+}
