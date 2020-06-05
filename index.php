@@ -10,25 +10,14 @@
 
 </head>
 <body>
-    <nav>
-        <div class="pages-nav">
-            <div class="brand">
-                <a href="./index.html">
-                    <img src="./img/Pages-DGLogo.png" alt="">
-                </a>
-            </div>
-            <ul class="nav-links">
-                <li><a class="nav-link" href="./index.html"">HOME</a></li>
-                <li><a class="nav-link active" href="./graphics.html"">GRAPHICS</a></li>
-            </ul>
-        </div>
-    </nav>
     <?php
         $dirname = "./img/websites/";
         $images = glob($dirname."*.jpg");
 
         foreach($images as $image) {
-            echo '<img src="'.$image.'" /><br />';
+            echo '<div class=gallery>';
+            echo '<img src="'.$image.'"  /><br />';
+            echo '</div>'
         }
     ?>
     <main>
