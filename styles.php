@@ -18,12 +18,12 @@ body{
 .gallery{
     line-height: 0;
    -webkit-column-count: 5;
-   -webkit-column-gap:   0px;
-   -moz-column-count:    5;
-   -moz-column-gap:      0px;
-   column-count:         5;
-   column-gap:           5px;
-   padding:5px 0;
+   -webkit-column-gap: 0px;
+   -moz-column-count: 5;
+   -moz-column-gap: 0px;
+   column-count: 5;
+   column-gap: 10px;
+   padding: 10px 0;
 }
 .gallery img{
     width: 100% !important;
