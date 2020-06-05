@@ -15,7 +15,9 @@
         $images = glob($dirname."*.jpg");
 
         foreach($images as $image) {
-            echo '<img class="gallery" src="'.$image.'"  /><br />';
+            echo "<div>";
+            echo '<img src="'.$image.'"  /><br />';
+            echo "</div>";
         }
     ?>
     <main>
