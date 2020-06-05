@@ -15,8 +15,9 @@ body{
 div{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-column-gap: 20px;
 }
 div img{
     width: 100%;
-    height: auto;
+    height: 20%;
 }
