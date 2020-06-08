@@ -28,6 +28,11 @@ body{
     width: 100% !important;
     height: auto !important;
     margin: 5px;
+
+    &:hover{
+      transform: scale(1.05);
+      
+    }
 }
 
 
