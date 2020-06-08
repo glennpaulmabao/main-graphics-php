@@ -24,7 +24,7 @@ body{
    column-count: 5;
    column-gap: 10px;
 
-   &:after {
+  :after {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -33,7 +33,7 @@ body{
     transition: opacity 0.3s ease-in-out;
   }
   
-  &:hover {
+  :hover {
     transform: scale(1.05);
     
     &:after {
