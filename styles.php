@@ -29,10 +29,22 @@ body{
     height: auto !important;
     margin: 5px;
 
-    &:hover{
-      transform: scale(1.05);
-      
+    &:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  &:hover {
+    transform: scale(1.05);
+    
+    &:after {
+      opacity: 0;
     }
+  }
 }
 
 
