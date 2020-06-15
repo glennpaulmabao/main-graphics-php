@@ -36,7 +36,7 @@ body{
   :hover {
     transform: scale(1.05);
     
-    &:after {
+  :after {
       opacity: 0;
     }
   }
